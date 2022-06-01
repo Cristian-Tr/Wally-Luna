@@ -1,0 +1,78 @@
+/* Game settings */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  line-height: 1.8;
+  transition: 0.8s ease;
+}
+
+h3 {
+  font-size: 27px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 255, 0.1), 0 0 5px rgba(0, 0, 255, 0.1),
+    0 1px 3px rgba(0, 0, 255, 0.3), 0 3px 5px rgba(0, 0, 255, 0.2),
+    0 5px 10px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 0, 255, 0.2);
+  margin-top: 5px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+
+h5 {
+  font-size: 17px;
+  color: blue;
+  font-family: "Arial Narrow";
+  text-align: center;
+  text-shadow: 0.3px 0.3px 0.3px black;
+}
+
+strong {
+  font-size: 20.5px;
+  color: white;
+  text-shadow: 1.8px 1.8px 1.8px blue;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Click on all the numbers game */
+/* Reset button */
+.numbersButton {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: center;
+}
+
+.numbersButton #resetGame {
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+  width: 135px;
+  height: 50px;
+  font-weight: 800;
+  border-radius: 5px;
+  background: #8888ff;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+#resetGame:hover {
+  background: red;
+}

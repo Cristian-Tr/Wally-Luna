@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wally & Luna</title>
+    <meta name="Educational games" content="Educational games" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bear.css">
+    <link rel="stylesheet" href="dog.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="panel panel-default text-center">
+
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-home"></span>&nbsp;
+                            Educational app</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#level-1">
+                                    Nivel 1</a></li>
+                            <li><a href="#level-2">
+                                    Nivel 2</span></a></li>
+                            <li><a href="#level-3">
+                                    Nivel 3</span></a></li>
+                            <li><a href="#level-4">
+                                    Jocuri</span></a></li>
+                            <li><a href="#level-5">
+                                    Rugăciuni</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+
+            <h1>WALLY & LUNA</h1>
+            <h2 id="initial-greeting"></h2>
+            <h2><b class="bear-message"></b></h2>
+
+            <div id="bear">
+
+                <div class="head">
+                    <div class="ears">
+                        <div class="ear ear-left"></div>
+                        <div class="ear ear-right"></div>
+                    </div>
+
+                    <div class="eyes">
+                        <div class="eye-l"></div>
+                        <div class="eyes-r"></div>
+                        <div class="iris"></div>
+                    </div>
+
+
+                    <div class="muzzle">
+                        <div class="nose"></div>
+                        <div class="mouth"></div>
+                    </div>
+
+                    <div class="head-bg"></div>
+                </div>
+
+                <div class="body">
+                    <div class="hands">
+                        <div class="hand-left"></div>
+                        <div class="hand-right"></div>
+                    </div>
+
+                    <div class="legs">
+                        <div class="leg-left"></div>
+                        <div class="leg-right"></div>
+                    </div>
+
+                    <div class="abdomen"></div>
+
+        </header><br>
+
+
+        <h3>Apasă butonul dorit și spune copilului care sunt literele, cifrele, culorile, formele sau imaginile
+            afișate aleator, apoi verifică dacă le-a memorat!</h3><br>
+
+        <h2>Nivelul 1</h2>
+
+        <div id="level-1" class="level-1">
+            <button id="button1">Plante<br><span id="plant" style="font-size: 100px;"></span></button>
+            <button id="button2">Animale<br><span id="animal" style="font-size: 100px;"></span></button>
+            <button id="button3">Forme<br><span id="shape" style="font-size: 100px;"></span></button>
+        </div>
+
+        <h2>Nivelul 2</h2>
+
+        <div id="level-2" class="level-2">
+            <button id="button4">Litere<br><span id="letter" style="font-size: 100px;"></span></button>
+            <button id="button5">Cifre<br><span id="figure" style="font-size: 100px;"></span></button>
+            <button id="button6">Culori<br></button>
+        </div>
+
+        <h2>Nivelul 3</h2>
+
+        <div id="level-3" class="level-3">
+            <button id="button7">Sporturi<br><span id="sport" style="font-size: 100px;"></span></button>
+            <button id="button8">Numere<br><span id="number" style="font-size: 100px;"></span></button>
+            <button id="button9">Vehicule<br><span id="vehicle" style="font-size: 100px;"></span></button>
+        </div>
+
+        <h2>Jocuri</h2>
+
+        <div id="level-4" class="level-4">
+            <button id="button10"><a href="./colors.html" style="font-size: 53px;">
+                    Culori<br>pereche</a></button>
+            <button id="button11"><a href="./puzzle-cifre.html" style="font-size: 53px;">
+                    Cifre<br>ordonate</a></button>
+            <button id="button12"><a href="./puzzle-dog.html" style="font-size: 53px;">
+                    Luna<br>puzzle</a></button>
+        </div>
+
+        <div class="level-5">
+            <button id="button13"><a href="./tower.html" style="font-size: 53px;">
+                    Turnul<br>covrigilor</a></button>
+            <button id="button14"><a href="./numere-razlete.html" style="font-size: 53px;">
+                    Numere<br>răzlețe</a></button>
+            <button id="button15"><a href="./ballons.html" style="font-size: 53px;">
+                    Baloane<br>buclucașe</a></button>
+        </div>
+
+        <h2>Spiritualitate</h2>
+
+        <div id="level-5" class="level-6">
+            <button id="button16"><a href="./e-book.html" style="font-size: 53px;">
+                    Rugăciuni<br>pt. copii</a></button>
+        </div>
+
+        <h2><b class="dog-message"></b></h2>
+
+        <div class="yard">
+            <div class="dog-body"></div>
+            <div class="yard-fence">
+                <div class="plank-1"></div>
+                <div class="plank-2"></div>
+                <div class="plank-3"></div>
+                <div class="plank-4"></div>
+                <div class="plank-5"></div>
+                <div class="plank-6"></div>
+                <div class="plank-7"></div>
+                <div class="plank-8"></div>
+                <div class="plank-9"></div>
+                <div class="plank-10"></div>
+
+            </div>
+
+            <div class="dog-paw left"></div>
+            <div class="dog-paw right"></div>
+            <div class="dog-head-all">
+                <div class="dog-head">
+                    <div class="dog-eye left"></div>
+                    <div class="dog-eye right"></div>
+                    <div class="dog-tongue"></div>
+                    <div class="dog-snoot"></div>
+                </div>
+                <div class="dog-ear left"></div>
+                <div class="dog-ear right"></div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

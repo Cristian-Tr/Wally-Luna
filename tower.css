@@ -1,0 +1,331 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+h1 {
+  padding: 0.5vmin;
+  color: red;
+  text-align: center;
+}
+
+label,
+input {
+  position: absolute;
+  top: -10vmin;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 35vmin;
+  height: 53vmin;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:nth-child(6n + 2),
+input:checked + input + input + label {
+  left: 0;
+}
+
+input:nth-child(6n + 3),
+input:checked + input + label {
+  left: 30vmin;
+}
+
+input:nth-child(6n + 4),
+input:checked + label {
+  left: 60vmin;
+}
+
+label,
+input:hover,
+input[readonly]:focus + input,
+input[readonly]:focus + input + input,
+input[readonly]:focus + input + input + input {
+  pointer-events: initial;
+}
+
+input[readonly],
+input:nth-child(6n + 2):checked ~ input:nth-child(6n + 2),
+input:nth-child(6n + 3):checked ~ input:nth-child(6n + 3),
+input:nth-child(6n + 4):checked ~ input:nth-child(6n + 4) {
+  pointer-events: none;
+}
+
+#one ~ input,
+#one ~ label {
+  z-index: 6;
+}
+
+#two ~ input,
+#two ~ label {
+  z-index: 5;
+}
+
+#three ~ input,
+#three ~ label {
+  z-index: 4;
+}
+
+#four ~ input,
+#four ~ label {
+  z-index: 3;
+}
+
+#five ~ input,
+#five ~ label {
+  z-index: 2;
+}
+
+#six ~ input,
+#six ~ label {
+  z-index: 1;
+}
+
+input#zero {
+  z-index: 7;
+}
+
+input#zero:focus {
+  pointer-events: none;
+}
+
+input[readonly]:focus + input:checked ~ #zero {
+  left: 0;
+  pointer-events: initial;
+}
+
+input[readonly]:focus + input + input:checked ~ #zero {
+  left: 30vmin;
+  pointer-events: initial;
+}
+
+input[readonly]:focus + input + input + input:checked ~ #zero {
+  left: 60vmin;
+  pointer-events: initial;
+}
+/* Discs */
+.pretzels {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  margin: 10vmin auto 0;
+  width: 90vmin;
+  height: 50vmin;
+}
+
+.pretzel {
+  z-index: 1;
+  border-radius: 5vmin;
+  border: 1px solid black;
+  height: 6.2vmin;
+  pointer-events: none;
+  transition: order 0.3s step-end;
+}
+
+input:checked + input + input + label + .pretzel {
+  order: 3;
+}
+
+input:checked + input + label + .pretzel {
+  order: 6;
+}
+
+input:checked + label + .pretzel {
+  order: 9;
+}
+
+input:focus + input:checked + input + input + label + .pretzel {
+  order: 1;
+  transition: order 0s;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+input:focus + input + input:checked + input + label + .pretzel {
+  order: 4;
+  transition: order 0s;
+  animation: float 3s ease-in-out infinite alternate;
+}
+input:focus + input + input + input:checked + label + .pretzel {
+  order: 7;
+  transition: order 0s;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-1.5vmin);
+  }
+}
+
+input:focus + input:hover + input + input + label + .pretzel,
+input + input:active + input + input + label + .pretzel {
+  order: 1;
+}
+
+input:focus + input + input:hover + input + label + .pretzel,
+input + input + input:active + input + label + .pretzel {
+  order: 4;
+}
+
+input:focus + input + input + input:hover + label + .pretzel,
+input + input + input + input:active + label + .pretzel {
+  order: 7;
+}
+
+.one {
+  margin: 0 10vmin;
+  width: 10vmin;
+  background: linear-gradient(to bottom, red, orange, red);
+}
+
+.two {
+  margin: 0 8vmin;
+  width: 14vmin;
+  background: linear-gradient(to bottom, blue, rgb(8, 134, 252), blue);
+}
+
+.three {
+  margin: 0 6vmin;
+  width: 18vmin;
+  background: linear-gradient(to bottom, green, rgba(85, 170, 5), green);
+}
+
+.four {
+  margin: 0 4vmin;
+  width: 22vmin;
+  background: linear-gradient(to bottom, maroon, rgb(187, 1, 1), maroon);
+}
+
+.five {
+  margin: 0 2vmin;
+  width: 26vmin;
+  background: linear-gradient(to bottom, gray, rgb(155, 153, 153), gray);
+}
+
+.six {
+  width: 30vmin;
+  background: linear-gradient(to bottom, yellow, #ffe900, yellow);
+}
+/* Spacers/Separators */
+.spacer {
+  width: 30vmin;
+  height: 1px;
+  flex-grow: 0;
+  pointer-events: none;
+  transition: flex 0.3s;
+}
+
+.separator {
+  width: 0;
+  height: 100%;
+}
+
+.a {
+  order: 2;
+}
+
+.ab {
+  order: 3;
+}
+
+.b {
+  order: 5;
+}
+
+.bc {
+  order: 6;
+}
+
+.c {
+  order: 8;
+}
+
+input[readonly]:focus + input:hover ~ .a,
+input[readonly]:focus + input + input:hover ~ .b,
+input[readonly]:focus + input + input + input:hover ~ .c {
+  transition: flex 0s;
+  flex-grow: 1;
+}
+
+input[readonly]:focus + input:checked ~ .a,
+input[readonly]:focus + input + input:checked ~ .b,
+input[readonly]:focus + input + input + input:checked ~ .c {
+  flex-grow: 1;
+}
+
+input:nth-child(6n + 4):checked
+  ~ input:nth-child(6n + 4):checked
+  ~ input:nth-child(6n + 4):checked
+  ~ input:nth-child(6n + 4):checked
+  ~ input:nth-child(6n + 4):checked
+  ~ input:nth-child(6n + 4):checked
+  ~ .win {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+form {
+  text-align: center;
+}
+
+.column {
+  position: absolute;
+  font-size: 17px;
+  color: white;
+  top: 8 vmin;
+  width: 5.7vmin;
+  height: 44vmin;
+  background: black;
+}
+
+.a {
+  left: 12.5vmin;
+}
+
+.b {
+  left: 42.5vmin;
+}
+
+.c {
+  left: 72.5vmin;
+}
+
+.table {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  color: white;
+  width: 95vmin;
+  height: 23vmin;
+  background: black;
+}
+
+button {
+  margin: 7.5vmin auto;
+  border: none;
+  border-radius: 1vmin;
+  width: 35vmin;
+  height: 10vmin;
+  font-size: 4vmin;
+  color: rgba(0, 0, 0, 0.5);
+  background: red;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: springgreen;
+}
+
+button:active {
+  background: springgreen;
+}

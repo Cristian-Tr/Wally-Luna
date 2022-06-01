@@ -1,0 +1,525 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+h1 {
+  color: red;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 12px;
+}
+
+h2 {
+  color: blue;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 5px;
+}
+
+h3 {
+  font-weight: 700;
+  color: blue;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 53px;
+  text-align: center;
+}
+
+h4 {
+  margin: 8px;
+  font-weight: 600;
+  text-align: center;
+  color: #cc0000;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+/*Greetings animation*/
+#initial-greeting {
+  font-family: "Pacifico", "Lato", "Times New Roman";
+  text-shadow: 1px 1px 1px blue;
+  animation: greeting 7.7s linear infinite;
+}
+
+@keyframes greeting {
+  0% {
+    color: magenta;
+  }
+  32.8% {
+    color: magenta;
+  }
+  33% {
+    color: springgreen;
+  }
+  65.8% {
+    color: springgreen;
+  }
+  66% {
+    color: cyan;
+  }
+  99.8% {
+    color: cyan;
+  }
+  100% {
+    color: magenta;
+  }
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+a {
+  color: blue;
+  font-size: 57px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.level-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button1 {
+  background-color: green;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button1:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button2 {
+  background-color: green;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button2:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button3 {
+  background-color: green;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button3:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.level-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button4 {
+  background-color: blue;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button4:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button5 {
+  background-color: blue;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button5:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button6 {
+  background-color: blue;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button6:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.level-3 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button7 {
+  background-color: red;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button7:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button8 {
+  background-color: red;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button8:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button9 {
+  background-color: red;
+  color: white;
+  text-shadow: 3.5px 3.5px 1.5px black;
+  width: 325px;
+  height: 325px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button9:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.level-4 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button10 {
+  background-color: yellow;
+  color: white;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button10:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button11 {
+  background-color: cyan;
+  color: white;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button11:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button12 {
+  background-color: pink;
+  color: white;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button12:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.level-5 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button13 {
+  background-color: lightgray;
+  color: white;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button13:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button14 {
+  background-color: orange;
+  color: white;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button14:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button15 {
+  background-color: springgreen;
+  color: white;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  border: 3.5px solid black;
+  border-radius: 17px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button15:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.level-6 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .level-6 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#button16 {
+  background-color: white;
+  color: blue;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button16:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}

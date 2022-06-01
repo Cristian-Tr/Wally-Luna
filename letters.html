@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jocul literelor</title>
+    <meta charset="UTF-8">
+    <meta name="Jocul literelor" content="Tasetaza litere" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./letters.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="./letters.js"></script>
+</head>
+
+<body class="container-fluid text-center">
+
+    <div id="container1">
+        <!-- Game section    -->
+        <section id='game-section'>
+            <div id='first-div'>
+                <h2>JOCUL LITERELOR</h2>
+
+                <output id='show-word'></output>
+
+                <br>
+                <br>
+
+                <label for="word-input">Tasteaza aici literele de mai sus:
+                    <input type="text" id='word-input' name='words'>
+                </label>
+                <output id='assert'>
+                    <!--ASSERT OUTPUT-->
+                </output>
+                <div id="display-time" class=''>
+                    0
+                </div>
+                <br>
+                <br>
+            </div>
+            <div id='second-div'>
+                <div>
+                    <label for='wordLength'>
+                        Număr<br>litere:</label>
+                    <br>
+                    <input id='wordLength' type='number' min='3' max='15' value='3'>
+                </div>
+                <div>
+                    <label for='counter-dur'>
+                        Durată<br>cronometru</label>
+                    <br>
+                    <input id='counter-dur' type='number' min='3' max='15' value='7'>
+                </div>
+            </div>
+
+        </section>
+        <!-- <hr> -->
+    </div><br>
+
+    <a href="./index.html" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-backward"></span> Wally & Luna
+    </a><br><br>
+
+</body>
