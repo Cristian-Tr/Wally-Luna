@@ -24,7 +24,6 @@ h3 {
   font-weight: 700;
   color: blue;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 53px;
   text-align: center;
 }
 
@@ -501,8 +500,9 @@ a {
   }
 }
 
+
 #button16 {
-  background-color: white;
+  background-color: magenta;
   color: blue;
   text-shadow: 1.7px 1.7px 1.7px black;
   width: 325px;
@@ -520,6 +520,52 @@ a {
 }
 
 #button16:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button17 {
+  background-color: lightblue;
+  color: blue;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button17:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+#button18 {
+  background-color: white;
+  color: blue;
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button18:hover {
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
     inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
 }

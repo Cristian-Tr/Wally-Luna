@@ -1,0 +1,151 @@
+html {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: lightgray;
+  font-family: sans-serif, "Times New Roman", Times, serif;
+  color: blue;
+  text-align: center;
+}
+
+body {
+  max-width: 700px;
+}
+
+h1,
+h3,
+H4,
+h6 {
+  text-align: center;
+  padding: 1px;
+  margin: 3px;
+}
+
+h5 {
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px black;
+  padding: 1px;
+  margin: 3px;
+}
+
+.wordRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  margin: 0.5rem 0;
+}
+
+.letter {
+  margin: auto;
+  width: 53px;
+  height: 53px;
+  outline-offset: -2px;
+  outline: 3px solid blue;
+  padding: 1rem 1.25rem;
+  font-size: 53px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+  user-select: none;
+  transition: 0.75s;
+}
+
+.letter:before {
+  content: "A";
+  color: transparent;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  font-size: 0;
+}
+
+#keyboard {
+  margin: 0 8px;
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 8px;
+  touch-action: manipulation;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: 0;
+  padding: 0;
+  margin: 0 7px 0 0;
+  height: 27px;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  background-color: blue;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+.big-key {
+  flex: 1.5;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.match {
+  background: springgreen !important;
+  outline: 3px solid blue;
+}
+
+.present {
+  background: yellow;
+  outline: 3px solid blue;
+}
+
+.absent {
+  background: red;
+  outline: 3px solid blue;
+}
+
+img {
+  max-width: 351px;
+  height: 215px;
+  margin: auto;
+  border-color: 10px blue;
+}
+
+#showHint {
+  width: 8rem;
+  height: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: blue;
+  margin: 3px auto;
+  border-radius: 3px;
+}
+
+#hintPhrase {
+  color: black;
+  width: 12rem;
+  height: 1.5rem;
+  margin: 5px auto;
+  background-color: yellow;
+}
