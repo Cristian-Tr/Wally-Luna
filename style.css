@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: white;
+  font-family: "Arial", "Times New Roman";
 }
 
 h1 {
@@ -34,9 +35,9 @@ h4 {
   color: #cc0000;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
+
 /*Greetings animation*/
 #initial-greeting {
-  font-family: "Pacifico", "Lato", "Times New Roman";
   text-shadow: 1px 1px 1px blue;
   animation: greeting 7.7s linear infinite;
 }
@@ -45,21 +46,27 @@ h4 {
   0% {
     color: magenta;
   }
+
   32.8% {
     color: magenta;
   }
+
   33% {
     color: springgreen;
   }
+
   65.8% {
     color: springgreen;
   }
+
   66% {
     color: cyan;
   }
+
   99.8% {
     color: cyan;
   }
+
   100% {
     color: magenta;
   }
@@ -566,6 +573,40 @@ a {
 }
 
 #button18:hover {
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
+    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+
+.level-7 {
+  width: 100%;
+  height: 290px;
+  margin: 100px auto;
+}
+
+#button19 {
+  background-color: violet;
+  color: springgreen;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1.7px 1.7px 1.7px black;
+  width: 325px;
+  height: 215px;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 17px;
+  border: 3.5px solid black;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 17px auto;
+}
+
+#button19:hover {
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
     inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
 }
